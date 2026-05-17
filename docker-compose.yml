@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    ports:
+      - "${STREAMLIT_PORT:-8501}:8501"
+    volumes:
+      - .:/app
+    environment:
+      - STREAMLIT_PORT=${STREAMLIT_PORT:-8501}
+      - PYTHONUNBUFFERED=1
+    command: streamlit run app.py --server.port ${STREAMLIT_PORT:-8501} --server.address 0.0.0.0

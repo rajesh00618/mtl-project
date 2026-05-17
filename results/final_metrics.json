@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "task_a": {
+      "accuracy": 0.9946,
+      "f1_score": 0.994679802955665
+    },
+    "task_b": {
+      "accuracy": 0.9912,
+      "f1_score": 0.9909147222795788
+    }
+  },
+  "pcgrad": {
+    "task_a": {
+      "accuracy": 0.9952,
+      "f1_score": 0.9952681388012619
+    },
+    "task_b": {
+      "accuracy": 0.9935,
+      "f1_score": 0.9932941297843805
+    }
+  }
+}

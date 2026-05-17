@@ -1,6 +1,15 @@
 # Multi-Task Learning with PCGrad
 
-This project demonstrates a custom TensorFlow multi-task learning system with gradient conflict detection and Projected Conflicting Gradients (PCGrad). It includes a Streamlit dashboard for monitoring gradient conflict, task performance, and shared representation visualization.
+This project demonstrates a custom TensorFlow multi-task learning system that trains a shared backbone on multiple objectives simultaneously. The codebase compares a standard baseline training approach with a gradient surgery method called Projected Conflicting Gradients (PCGrad), which helps mitigate conflicting gradients between tasks and improves multi-task convergence.
+
+The repository includes data handling, model definition, training scripts, model architecture summary generation, and a Streamlit dashboard for visualizing training metrics, gradient conflict behavior, and shared feature representations.
+
+Key goals of the project:
+
+- Showcase how multi-task learning can share representations across tasks while preserving task-specific performance.
+- Compare naive loss summation against PCGrad for reducing inter-task gradient conflict.
+- Provide tools to inspect model architecture, training progress, and result artifacts.
+- Package the app and training workflow so it can run locally or inside Docker.
 
 ## Files
 
